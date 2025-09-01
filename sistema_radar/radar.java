@@ -1,6 +1,6 @@
 package sistema_radar;
 
-public class radar {
+public class Radar {
     
     public String localizacao;
     public Integer limiteVelocidade;

@@ -12,5 +12,17 @@ public class Simulacao {
         radar radar - new Radar();
         radar.localizacao = "Pistão Sul";
         radar.limiteVelocidade = 60;
+
+        radar.avaliarVelocidade(opala);
+
+        opala.acelerar(); //10
+        opala.acelerar();
+        opala.acelerar();
+        opala.acelerar();
+        opala.acelerar();
+        opala.acelerar();
+        opala.acelerar(); //70
+
+        radar.avaliarVelocidade(opala);
     }
 }
