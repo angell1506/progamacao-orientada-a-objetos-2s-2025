@@ -9,7 +9,7 @@ public class Simulacao {
         opala.placa = "ACRL300";
         opala.velocidade = 0;
 
-        radar radar - new Radar();
+        Radar radar = new Radar();
         radar.localizacao = "Pistão Sul";
         radar.limiteVelocidade = 60;
 
