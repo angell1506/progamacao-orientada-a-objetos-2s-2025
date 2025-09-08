@@ -16,6 +16,21 @@ public class Carro {
     public Integer getVelocidade(){
         return this.velocidade;
     }
+    public String getPlaca(){
+        return this.placa;
+    }
+    public void setPlaca(String placa){
+        this.placa = placa;
+    }
+    public String getModelo(){
+        return this.modelo;
+    }
+    public Integer getAno(){
+        return this.ano;
+    }
+    public void setAno(Integer ano){
+        this.ano = ano;
+    }
     public void setVelocidade(Integer velocidade){
         if(velocidade >= 0){
             this.velocidade = velocidade;
