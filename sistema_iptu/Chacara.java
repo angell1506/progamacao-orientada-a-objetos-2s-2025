@@ -10,6 +10,13 @@ public class Chacara {
         return this.areaM2 * this.municipio.getPrecoM2();
     }
 
+    public Chacara(Municipio municipio, Double areaM2, Integer vagas, Boolean possuiPOCOArtesiano) {
+        this.municipio = municipio;
+        this.areaM2 = areaM2;
+        this.vagas = vagas;
+        this.possuiPOCOArtesiano = possuiPOCOArtesiano;
+    }
+
     public Municipio getMunicipio() {
         return this.municipio;
     }
