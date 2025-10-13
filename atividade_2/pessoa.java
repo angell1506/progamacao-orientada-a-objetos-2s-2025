@@ -1,6 +1,6 @@
 package atividade_2;
 
-public abstract class Pessoa {
+public abstract class pessoa {
     protected String nome;
     protected String email;
 

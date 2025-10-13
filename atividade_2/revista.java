@@ -1,6 +1,6 @@
 package atividade_2;
 
-public class Revista extends Material {
+public class revista extends material {
     private String autor;
 
     public Revista(String titulo, Integer anoPublicacao, String autor) {

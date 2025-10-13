@@ -1,9 +1,9 @@
 package atividade_2;
 
-public class Livro extends Material {
+public class livro extends Material {
     private String edicao;
 
-    public Livro(String titulo, Integer anoPublicacao, String edicao) {
+    public livro(String titulo, Integer anoPublicacao, String edicao) {
         super(titulo, anoPublicacao);
         this.edicao = edicao;
     }

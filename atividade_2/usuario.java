@@ -1,9 +1,9 @@
 package atividade_2;
 
-public class Usuario extends Pessoa {
+public class usuario extends Pessoa {
     private Integer matricula;
 
-    public Usuario(String nome, String email, Integer matricula) {
+    public usuario(String nome, String email, Integer matricula) {
         super(nome, email);
         this.matricula = matricula;
     }

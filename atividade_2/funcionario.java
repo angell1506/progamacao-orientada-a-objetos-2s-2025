@@ -1,9 +1,9 @@
 package atividade_2;
 
-public class Funcionario extends Pessoa {
+public class funcionario extends Pessoa {
     private String cargo;
 
-    public Funcionario(String nome, String email, String cargo) {
+    public funcionario(String nome, String email, String cargo) {
         super(nome, email);
         this.cargo = cargo;
     }

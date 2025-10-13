@@ -1,6 +1,6 @@
 package atividade_2;
 
-public abstract class Material {
+public abstract class material {
     protected String titulo;
     protected Integer anoPublicacao;
 

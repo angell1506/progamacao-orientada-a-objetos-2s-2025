@@ -1,6 +1,6 @@
 package atividade_2;
 
-public class Emprestimo {
+public class emprestimo {
     private Pessoa pessoa;
     private Material material;
     private String dataEmprestimo;
