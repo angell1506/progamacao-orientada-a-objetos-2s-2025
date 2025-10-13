@@ -8,6 +8,14 @@ public class revista extends material {
         this.autor = autor;
     }
 
+    public String getAutor() {
+        return this.autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
     @Override
     public void descricao() {
         System.out.println("Título: " + titulo);

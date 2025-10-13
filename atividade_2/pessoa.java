@@ -1,21 +1,28 @@
-package atividade_2;
+public abstract class Pessoa {
+    private String nome;
+    private String email;
 
-public abstract class pessoa {
-    protected String nome;
-    protected String email;
+    public abstract void exibirInfo();
 
-    public pessoa(String nome, String email) {
+    public Pessoa(String nome, String email){
         this.nome = nome;
         this.email = email;
     }
 
-    public abstract void exibirInfo();
-
     public String getNome() {
-        return nome;
+        return this.nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getEmail() {
-        return email;
+        return this.email;
     }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
 }

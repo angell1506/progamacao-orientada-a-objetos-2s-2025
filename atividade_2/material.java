@@ -1,21 +1,28 @@
-package atividade_2;
+public abstract class Material {
+    private String titulo;
+    private Integer anoPublicacao;
 
-public abstract class material {
-    protected String titulo;
-    protected Integer anoPublicacao;
+    public abstract void descricao();
 
-    public material(String titulo, Integer anoPublicacao) {
+    public Material(String titulo, Integer anoPublicacao) {
         this.titulo = titulo;
         this.anoPublicacao = anoPublicacao;
     }
 
-    public abstract void descricao();
-
     public String getTitulo() {
-        return titulo;
+        return this.titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
     }
 
     public Integer getAnoPublicacao() {
-        return anoPublicacao;
+        return this.anoPublicacao;
     }
+
+    public void setAnoPublicacao(Integer anoPublicacao) {
+        this.anoPublicacao = anoPublicacao;
+    }
+
 }

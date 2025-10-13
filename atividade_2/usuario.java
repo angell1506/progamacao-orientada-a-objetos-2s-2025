@@ -1,10 +1,18 @@
 package atividade_2;
 
-public class usuario extends Pessoa {
+public class Usuario extends Pessoa {
     private Integer matricula;
 
-    public usuario(String nome, String email, Integer matricula) {
+    public usuario(String nome, String email, Integer matricula){
         super(nome, email);
+        this.matricula = matricula;
+    }
+
+    public Integer getMatricula() {
+        return this.matricula;
+    }
+
+    public void setMatricula(Integer matricula) {
         this.matricula = matricula;
     }
 
