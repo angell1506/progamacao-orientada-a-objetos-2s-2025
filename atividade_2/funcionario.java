@@ -1,9 +1,9 @@
 package atividade_2;
 
-public class funcionario extends pessoa {
+public class funcionario extends Pessoa {
     private String cargo;
 
-    public funcionario(String nome, String email, String cargo) {
+    public Funcionario(String nome, String email, String cargo) {
         super(nome, email);
         this.cargo = cargo;
     }
@@ -18,8 +18,8 @@ public class funcionario extends pessoa {
 
     @Override
     public void exibirInfo() {
-        System.out.println("Nome: " + nome);
-        System.out.println("Email: " + email);
-        System.out.println("Cargo: " + cargo);
+        System.out.println("Nome: " + this.getNome());
+        System.out.println("Email: " + this.getEmail());
+        System.out.println("Cargo: " + this.cargo);
     }
 }

@@ -1,9 +1,9 @@
 package atividade_2;
 
-public class revista extends material {
+public class Revista extends Material {
     private String autor;
 
-    public revista(String titulo, Integer anoPublicacao, String autor) {
+    public Revista(String titulo, Integer anoPublicacao, String autor) {
         super(título, anoPublicacao);
         this.autor = autor;
     }
@@ -18,8 +18,8 @@ public class revista extends material {
 
     @Override
     public void descricao() {
-        System.out.println("Título: " + titulo);
-        System.out.println("Ano de Publicação: " + anoPublicacao);
-        System.out.println("Autor: " + autor);
+        System.out.println("Título: " + this.getTitulo());
+        System.out.println("Ano de Publicação: " + this.getAnoPublicacao());
+        System.out.println("Autor: " + this.getAutor());
     }
 }
