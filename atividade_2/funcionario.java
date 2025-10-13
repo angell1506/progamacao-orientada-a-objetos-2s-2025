@@ -1,6 +1,6 @@
 package atividade_2;
 
-public class funcionario extends Pessoa {
+public class funcionario extends pessoa {
     private String cargo;
 
     public funcionario(String nome, String email, String cargo) {

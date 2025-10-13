@@ -4,7 +4,7 @@ public abstract class material {
     protected String titulo;
     protected Integer anoPublicacao;
 
-    public Material(String titulo, Integer anoPublicacao) {
+    public material(String titulo, Integer anoPublicacao) {
         this.titulo = titulo;
         this.anoPublicacao = anoPublicacao;
     }

@@ -3,8 +3,8 @@ package atividade_2;
 public class revista extends material {
     private String autor;
 
-    public Revista(String titulo, Integer anoPublicacao, String autor) {
-        super(titulo, anoPublicacao);
+    public revista(String titulo, Integer anoPublicacao, String autor) {
+        super(título, anoPublicacao);
         this.autor = autor;
     }
 

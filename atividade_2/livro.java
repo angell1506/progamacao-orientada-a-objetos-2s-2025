@@ -1,6 +1,6 @@
 package atividade_2;
 
-public class livro extends Material {
+public class livro extends material {
     private String edicao;
 
     public livro(String titulo, Integer anoPublicacao, String edicao) {

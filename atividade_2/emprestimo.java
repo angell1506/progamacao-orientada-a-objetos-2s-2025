@@ -1,12 +1,12 @@
 package atividade_2;
 
 public class emprestimo {
-    private Pessoa pessoa;
-    private Material material;
+    private pessoa pessoa;
+    private material material;
     private String dataEmprestimo;
     private String dataDevolucao;
 
-    public Emprestimo(Pessoa pessoa, Material material, String dataEmprestimo, String dataDevolucao) {
+    public emprestimo(pessoa pessoa, material material, String dataEmprestimo, String dataDevolucao) {
         this.pessoa = pessoa;
         this.material = material;
         this.dataEmprestimo = dataEmprestimo;

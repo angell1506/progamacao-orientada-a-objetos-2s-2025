@@ -4,7 +4,7 @@ public abstract class pessoa {
     protected String nome;
     protected String email;
 
-    public Pessoa(String nome, String email) {
+    public pessoa(String nome, String email) {
         this.nome = nome;
         this.email = email;
     }
