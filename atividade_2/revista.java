@@ -1,25 +1,26 @@
 package atividade_2;
 
 public class Revista extends Material {
-    private String autor;
+    private String edicao;
 
-    public Revista(String titulo, Integer anoPublicacao, String autor) {
+    public Revista(String titulo, Integer anoPublicacao, String edicao) {
         super(título, anoPublicacao);
-        this.autor = autor;
+        this.edicao = edicao;
     }
 
-    public String getAutor() {
-        return this.autor;
+
+    public String getEdicao() {
+        return this.edicao;
     }
 
-    public void setAutor(String autor) {
-        this.autor = autor;
+    public void setEdicao(String edicao) {
+        this.edicao = edicao;
     }
 
     @Override
-    public void descricao() {
+    public void descricao(){
         System.out.println("Título: " + this.getTitulo());
         System.out.println("Ano de Publicação: " + this.getAnoPublicacao());
-        System.out.println("Autor: " + this.getAutor());
+        System.out.println("Edição: " + this.edicao);
     }
 }
