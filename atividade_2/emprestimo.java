@@ -1,32 +1,29 @@
-package atividade_2;
-
-public class emprestimo {
-    private Pessoa pessoa;
-    private Paterial material;
+public class Emprestimo {
+    private TomadorEmprestimo tomadorEmprestimo;
+    private Material material;
     private String dataEmprestimo;
     private String dataDevolucao;
 
-    public emprestimo(Pessoa pessoa, Material material, String dataEmprestimo, String dataDevolucao) {
-        this.pessoa = pessoa;
+    public Emprestimo(TomadorEmprestimo tomadorEmprestimo, Material material, String dataEmprestimo, String dataDevolucao) {
+        this.tomadorEmprestimo = tomadorEmprestimo;
         this.material = material;
         this.dataEmprestimo = dataEmprestimo;
         this.dataDevolucao = dataDevolucao;
     }
 
-
-    public pessoa getPessoa() {
-        return this.pessoa;
+    public TomadorEmprestimo getTomadorEmprestimo() {
+        return this.tomadorEmprestimo;
     }
 
-    public void setPessoa(pessoa pessoa) {
-        this.pessoa = pessoa;
+    public void setTomadorEmprestimo(TomadorEmprestimo tomadorEmprestimo) {
+        this.tomadorEmprestimo = tomadorEmprestimo;
     }
 
-    public material getMaterial() {
+    public Material getMaterial() {
         return this.material;
     }
 
-    public void setMaterial(material material) {
+    public void setMaterial(Material material) {
         this.material = material;
     }
 
@@ -46,13 +43,12 @@ public class emprestimo {
         this.dataDevolucao = dataDevolucao;
     }
 
-
-    public void exibirDetalhes() {
-        System.out.println("Data do Empréstimo: " + dataEmprestimo);
-        System.out.println("Data de Devolução: " + dataDevolucao);
-        System.out.println("Informações da Pessoa:");
-        pessoa.exibirInfo();
-        System.out.println("Informações do Material:");
-        material.descricao();
+    public void exibirDetalhes(){
+        System.out.println("Data do empréstimo: " + this.dataEmprestimo);
+        System.out.println("Data da devolução: " + this.dataDevolucao);
+        System.out.println("TomadorEmprestimo vinculada");
+        this.tomadorEmprestimo.exibirInfo();
+        System.out.println("Material vinculada");
+        this.material.descricao();
     }
 }
