@@ -29,6 +29,8 @@ public class ExemploHashSet {
         }
 
         inteiros.clear();
-        if(inteiros.)
+        if(inteiros.isEmpty()) {
+            System.out.println( "O conjunto está vazio.");
+        }
     }
 }
